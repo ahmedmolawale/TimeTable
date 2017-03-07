@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-v4\\course_details.xml",
+        "source": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\src\\main\\res\\layout-xlarge\\course_details.xml"
+    },
+    {
+        "merged": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-v4\\gp_fragment_layout.xml",
+        "source": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\src\\main\\res\\layout-xlarge\\gp_fragment_layout.xml"
+    },
+    {
+        "merged": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-v4\\activity_about.xml",
+        "source": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\src\\main\\res\\layout-xlarge\\activity_about.xml"
+    },
+    {
+        "merged": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-v4\\feedback_layout.xml",
+        "source": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\src\\main\\res\\layout-xlarge\\feedback_layout.xml"
+    },
+    {
+        "merged": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-v4\\list_item.xml",
+        "source": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\src\\main\\res\\layout-xlarge\\list_item.xml"
+    },
+    {
+        "merged": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-v4\\settings_layout.xml",
+        "source": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\src\\main\\res\\layout-xlarge\\settings_layout.xml"
+    },
+    {
+        "merged": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-v4\\view_header.xml",
+        "source": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\src\\main\\res\\layout-xlarge\\view_header.xml"
+    },
+    {
+        "merged": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-v4\\gp_list_item.xml",
+        "source": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\src\\main\\res\\layout-xlarge\\gp_list_item.xml"
+    },
+    {
+        "merged": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-v4\\edit_fragment_layout.xml",
+        "source": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\src\\main\\res\\layout-xlarge\\edit_fragment_layout.xml"
+    }
+]

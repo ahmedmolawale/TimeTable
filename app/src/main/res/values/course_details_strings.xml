@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="course_code_in_details">Course Code:</string>
+    <string name="course_title_in_details">Course Title:</string>
+    <string name="time_in_details">Time:</string>
+    <string name = "alarm_time_details">Alarm Time:</string>
+    <string name="lecturer_in_details">Lecturer:</string>
+    <string name="venue_in_details">Venue:</string>
+    <string name="edit_in_details">Edit</string>
+    <string name="delete_in_details">Delete course</string>
+    
+    <string name="lecturer_name_not_present">Use the \'edit\' button to add this.</string>
+    <string name="venue_not_present">Use the \'edit\' button to add this.</string>
+    <string name="alarm_not_present">Use the \'edit\' button to add thisyyy.</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/add_new_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:drawableLeft="@mipmap/ic_add_grade"
+        android:drawableStart="@mipmap/ic_add_grade"
+        android:text="@string/ad_new_grade"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/compute_gp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:background="?attr/selectableItemBackground"
+        android:drawableLeft="@mipmap/ic_compute_gp"
+        android:drawableStart="@mipmap/ic_compute_gp"
+        android:text="@string/compute_gp"
+        android:textStyle="italic" />
+
+
+</LinearLayout>

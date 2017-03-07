@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name = "message">This App also includes a simple Grade Point System to easily compute
+        					your semester Grade Point Average.\n\n
+        					It takes your Grade Point Scale into consideration.</string>
+    <string name = "clickHere">CLICK HERE TO USE</string>
+    <string name = "defaultMessage">Use the \'+\' sign above to add course and the other to compute. </string>
+	<string name = "action_add_item">Add item</string>
+	<string name = "action_calculate">Compute</string>
+	<string name = "course_in_gp_list">Course</string>
+	
+	 <string-array name="units">
+        <item>Unit</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    
+	  <string-array name="gradesForFourPointsScale">
+         <item>Grade</item>
+        <item>A</item>
+        <item>AB</item>
+        <item>B</item>
+         <item>BC</item>
+        <item>C</item>
+        <item>F</item>
+    </string-array>
+    
+    
+     
+      <string-array name="gradesForFivePointsScale">
+         <item>Grade</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+    </string-array>
+    
+       <string-array name="gradesForSevenPointsScale">
+         <item>Grade</item>
+        <item>7 pts</item>
+        <item>6 pts</item>
+        <item>5 pts</item>
+        <item>4 pts</item>
+         <item>3 pts</item>
+        <item>2 pts</item>
+        <item>1 pt</item>
+        <item>0 pt</item>
+    </string-array>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name = "feedbacktitle">Enter feedback details to send to the developer.</string>
+    <string name = "feedbackname">Please enter your name</string>
+     <string name = "feedbackemail">Please enter your Email</string>
+     <string name = "feedbackbody">Please enter your Message here&#8230;</string>
+     <string name = "feedbackresponse">Would you like an email response?</string>
+     <string name = "feedbackbutton">Send feedback</string>
+    
+     
+    
+     
+     <!--Other string resources also defined in this file… -->
+    <string-array name = "feedbacktypelist">
+        <item>Suggestion</item>
+        <item>Love it!</item>
+        <item>Report Error</item>
+        <item>Criticize</item>
+        
+    </string-array>
+</resources>

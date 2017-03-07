@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.domainname.timetablemanager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="23" />
+    <!-- Permission to start Alarm and Mute on device reboot -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Include required permissions for Google Mobile Ads to run -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <meta-data
+            android:name="ADMOB_ALLOW_LOCATION_FOR_ADS"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="activity.MainActivity"
+            android:icon="@drawable/ic_launcher" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activity.CourseDetails"
+            android:parentActivityName="activity.MainActivity" >
+            <intent-filter>
+                <action android:name=".CourseDetails" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="activity.MainActivity" />
+        </activity>
+        <activity android:name="activity.CourseEdit" >
+            <intent-filter>
+                <action android:name="CourseEdit" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activity.FourPointGradeActivity"
+            android:parentActivityName="activity.MainActivity" >
+            <intent-filter>
+                <action android:name=".FourPointGradeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="activity.FivePointGradeActivity"
+            android:parentActivityName="activity.MainActivity" >
+            <intent-filter>
+                <action android:name=".FivePointGradeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="activity.SevenPointGradeActivity"
+            android:parentActivityName="activity.MainActivity" >
+            <intent-filter>
+                <action android:name=".SevenPointGradeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="activity.FeedbackActivity"
+            android:parentActivityName="activity.MainActivity" >
+            <intent-filter>
+                <action android:name=".FeedbackActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="activity.AboutActivity"
+            android:parentActivityName="activity.MainActivity" >
+            <intent-filter>
+                <action android:name=".AboutActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="activity.HelpActivity"
+            android:parentActivityName="activity.MainActivity" >
+            <intent-filter>
+                <action android:name=".HelpActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="activity.MainActivity" />
+        </activity>
+        <activity android:name="activity.Settings" >
+            <intent-filter>
+                <action android:name=".SettingsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <!-- Registering the BootTimeService that register the alarm on boot -->
+        <service
+            android:name="alarm.DeviceBootAlarmService"
+            android:exported="false" />
+        <!-- Registering the NotificationService that set up the alarm notification -->
+        <service
+            android:name="alarm.NotificationService"
+            android:exported="false" />
+        <service
+            android:name="alarm.ModificationService"
+            android:exported="false" />
+        <service
+            android:name="alarm.SecondModificationService"
+            android:exported="false" />
+        <service
+            android:name="mute.DeviceBootMuteService"
+            android:exported="false" />
+
+        <!-- Registering the AlarmReceiver that receive the alarm broadcast -->
+        <receiver
+            android:name="alarm.AlarmReceiver"
+            android:enabled="true" />
+        <receiver
+            android:name="alarm.DeviceBootAlarmReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="mute.MuteDeviceReceiver"
+            android:enabled="true" />
+        <receiver
+            android:name="mute.UnmuteDeviceReceiver"
+            android:enabled="true" />
+        <receiver
+            android:name="mute.DeviceBootMuteReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

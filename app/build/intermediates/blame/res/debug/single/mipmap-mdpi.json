@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_add_grade.png",
+        "source": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\src\\main\\res\\mipmap-mdpi\\ic_add_grade.png"
+    },
+    {
+        "merged": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_compute_gp.png",
+        "source": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\src\\main\\res\\mipmap-mdpi\\ic_compute_gp.png"
+    },
+    {
+        "merged": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_help.png",
+        "source": "C:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\src\\main\\res\\mipmap-mdpi\\ic_help.png"
+    }
+]

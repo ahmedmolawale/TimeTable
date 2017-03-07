@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Time Table Manager</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="view_nodata">You have not added any course yet. Please use the \'Add\' tab.</string>
+    <string name="select_day">Select day:</string>
+    <string name="start_time_button">Start time</string>
+    <string name="end_time_button">End time</string>
+    <string name="start_time_text">00:00 AM</string>
+    <string name="end_time_text">00:00 AM</string>
+    <string name="course_code">Enter Course Code</string>
+    <string name="course_title">Enter Course Title</string>
+    <string name="lecturer_name">Enter Lecturer\'s Name</string>
+    <string name="venue">Enter Lecture\'s venue</string>
+    <string name="alarm_time">Select alarm\'s time</string>
+    <string name="save">Save</string>
+    <string name="done">Done</string>
+    <string name="rowId">-1</string>
+
+    <!-- strings for the action bar items -->
+    <string name="action_refresh">Refresh</string>
+    <string name="action_overflow">Overflow</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_new">New</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_done">Done</string>
+    <string name="action_save">Save</string>
+    <string name="action_update">Update</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="action_donation">Donation</string>
+    <string name="action_feedback">Feedback</string>
+
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string-array name="alarm">
+        <item>None</item>
+        <item>15 mins before lecture</item>
+        <item>30 mins before lecture</item>
+        <item>1 hr before lecture</item>
+        <item>2 hrs before lecture</item>
+        <item>3 hrs before lecture</item>
+    </string-array>
+
+    <string name="title_activity_course_info">Course Info</string>
+    <string name="title_activity_course_details">CourseDetails</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_settingsactivity">Settings</string>
+    <string name="title_activity_four_point_grade">Four Point Grade System</string>
+    <string name="title_activity_five_point_grade">Five Point Grade System</string>
+    <string name="title_activity_seven_point_grade">Seven Point Grade System</string>
+    <string name="title_activity_donation">Donation</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="about">A simple but very useful application to manage your timetable. It helps 
+         you follow up your lectures accordingly. \n\nYou can connect with us via our various social platforms: </string>
+    <string name="facebook_in_about">Facebook</string>
+    <string name="youtube_in_about">Youtube</string>
+    <string name="twitter_in_about">Twitter</string>
+
+
+    <string name="cancel_in_gplist">Cancel</string>
+    <string name="day_in_view_header">Day</string>
+    <string name="compute_gp">Compute</string>
+    <string name="ad_new_grade">Add new grade</string>
+    <string name="help_section">Help Section</string>
+    <string name="help_section_message"> The application contains 3 tabs:\n\n
+                                        View Tab: This lists all the days in the week and the courses you have scheduled for that day and the time.\n\n
+                                        Add Tab: This allows you assign classes to specific days. You will be required to:\n\n
+
+                                         • Select Day, Enter Course Code, Course Title, Start Time, End Time.\n
+                                         • You can optionally Enter Lecturer’s Name and Lecture Venue.\n
+                                         • Select alarm time so as to get reminder for your class. Options include 15mins, 30mins, 1hr, 2hrs or 3hrs before lecture, Or no reminder at all.\n
+                                         • Click on Save to add it to the list in View Tab. That’s it.\n
+
+                                        GP Tab: This tab allows you calculate your Grade Point Average. It is extended to support the 7, 5 and 4-point scales.\n
+                                        Click the add new Grade button to add a new course [You would be required to enter course title, unit and grade for each course].\n
+                                        Click the Compute Gp button to calculate your CGPA. Best wishes.\n\n
+                                        Other navigation views includes:\n\n
+                                        SETTINGS: This lets you set your device on auto-mute or auto-vibrate during lectures, you can also wipe entire app history and do other
+                                        permissions settings.\n\n
+                                        FEEDBACK: This allows you get in touch with the developer of this application.
+    </string>
+    <string name="sound_section">Sound</string>
+    <string name="pref_checkbox_key">pre_checkbox_key</string>
+    <string name="mute">Mute</string>
+    <string name="pref_checkbox_key_2">pref_checkbox_2</string>
+    <string name="vibrate">vibrate</string>
+    <string name="auto_vibrate">Auto vibrate device during lecture</string>
+    <string name="pref_notification_sound">Notification Sound</string>
+    <string name="pref_notification_key">pref_notification_key</string>
+    <string name="pref_notification_summary">Choose a notification sound</string>
+    <string name="alarm">Alarm</string>
+    <string name="cancel_all_alarm">Cancel Alarm</string>
+    <string name="pref_alarm_key">pref_alarm_key</string>
+    <string name="data_section">Data</string>
+    <string name="data">Delete Data</string>
+    <string name="delete_data_summary">Delete all saved course</string>
+    <string name="pref_data_key">pref_data_key</string>
+    <string name="title_activity_main_screen">Time Table Manager</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_help">Help Section</string>
+
+</resources>

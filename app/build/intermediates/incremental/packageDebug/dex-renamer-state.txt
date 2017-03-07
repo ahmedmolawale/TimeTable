@@ -1,0 +1,7 @@
+#Thu Jan 26 08:51:05 WAT 2017
+base.0=C\:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_6d207a4bceb1684f1b15042450fb1e41e3a8e177
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_2681afa8b38833c7d387948cd85f1962502d917f\\classes.dex
+base.1=C\:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_2681afa8b38833c7d387948cd85f1962502d917f
+file.0=C\:\\Development\\AndroidWorkspace\\TimeTableManager2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_6d207a4bceb1684f1b15042450fb1e41e3a8e177\\classes.dex

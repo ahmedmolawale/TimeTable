@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_on_view_fragment">ca-app-pub-1425041143559471/9471662947</string>
+    <string name="banner_on_edit_fragment">ca-app-pub-1425041143559471/7648885746</string>
+    <string name="banner_on_gp_fragment">ca-app-pub-1425041143559471/9774433741</string>
+    <string name="banner_on_settings">ca-app-pub-1425041143559471/1971965344</string>
+    <string name="banner_on_feedback">ca-app-pub-1425041143559471/3448698542</string>
+    <string name="banner_on_about">ca-app-pub-1425041143559471/4925431741</string>
+    <string name="banner_on_course_details">ca-app-pub-1425041143559471/4785830941</string>
+    <string name="banner_on_course_edit">ca-app-pub-1425041143559471/6262564146</string>
+
+
+    <string name="settings_interstitial">ca-app-pub-1425041143559471/7878898141</string>
+    <string name="course_details_interstitial">ca-app-pub-1425041143559471/9355631346</string>
+    <string name="gp_system_interstitial">ca-app-pub-1425041143559471/6402164948</string>
+</resources>

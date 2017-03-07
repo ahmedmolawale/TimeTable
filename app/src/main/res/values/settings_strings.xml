@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auto_mute">Auto mute device during lecture?</string>
+     <string name="delete_all_alarm">Delete ALL lectures notification\n(Use with caution)</string>
+     <string name="delete_all_courses">Delete ALL added courses\n(Use with caution)</string>
+       <string name="select">Choose notification sound</string>
+</resources>

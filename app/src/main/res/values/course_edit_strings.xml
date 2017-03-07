@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name = "day_in_edit">Day:</string>
+    <string name="course_code_in_edit">Course Code:</string>
+    <string name="course_title_in_edit">Course Title:</string>
+    <string name="time_in_edit">Time:</string>
+    <string name = "alarm_time_edit">Alarm Time:</string>
+    <string name="lecturer_in_edit">Lecturer:</string>
+    <string name="venue_in_edit">Venue:</string>
+    <string name="to_in_edit">To</string>
+   <string name="update_in_edit">Update</string>
+   
+   <string name ="venue_edit_2">Enter venue</string>
+   <string name = "lecturer_edit_2">Enter lecturer\'\s name</string>
+   
+    
+</resources>

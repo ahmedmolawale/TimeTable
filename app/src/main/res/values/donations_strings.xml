@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name = "donationmessage">
+        You can donate to motivate the development of other good apps like this. 
+        Do this by clicking any of the below to donate the specified amount.
+        Money will be deducted from your sim account. Thanks. 
+    </string>
+    <string name = "onehundrednaira">DONATE 100 NAIRA</string>
+     <string name = "twohundrednaira">DONATE 200 NAIRA</string>
+      <string name = "fivehundrednaira">DONATE 500 NAIRA</string>
+       <string name = "onethousandnaira">DONATE 1000 NAIRA</string>
+       
+        <string name = "times">You can donate as many times as u wish. Thanks.</string>
+    
+</resources>

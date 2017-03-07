@@ -1,0 +1,97 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView4"
+        android:layout_alignParentTop="true"
+        android:padding="20dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView4"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+
+
+        <CheckBox
+            android:id="@+id/muteDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_mute"
+            android:textSize="33sp"/>
+
+
+     <View
+         style="@style/Divider"
+         android:layout_marginBottom="10dp" />
+
+      <TextView
+          android:id="@+id/selectASound"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="15dp"
+          android:text="@string/select"
+          android:textColor="@color/black"
+          android:textSize="33sp" />
+
+     <View
+         style="@style/Divider"
+         android:layout_marginBottom="10dp"
+         />
+     
+     <TextView
+         android:id="@+id/deleteAllAlarms"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="15dp"
+         android:text="@string/delete_all_alarm"
+         android:textColor="@color/black"
+         android:textSize="33sp" />
+
+     <View
+         style="@style/Divider"
+         
+         android:layout_marginBottom="10dp" />
+
+     <TextView
+         android:id="@+id/deleteAllCourses"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="15dp"
+         android:text="@string/delete_all_courses"
+         android:textColor="@color/black"
+         android:textSize="33sp" />
+
+    
+
+       <View
+           style="@style/Divider"
+           android:layout_marginBottom="5dp"
+           android:layout_marginTop="10dp" />
+
+</LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_on_settings">
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>

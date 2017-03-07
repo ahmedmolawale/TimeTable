@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/adView6"
+        >
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+     >
+
+    <TextView
+        android:id="@+id/TextViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feedbacktitle"
+        android:textColor="@color/black"
+        android:textSize="10pt" >
+
+	</TextView>
+
+	<EditText
+	    android:id="@+id/EditTextName"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:hint="@string/feedbackname"
+	    android:inputType="textPersonName"
+	    android:textColorHint="@color/blue" >
+
+</EditText>
+
+<EditText
+    android:id="@+id/EditTextEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:hint="@string/feedbackemail"
+    android:inputType="textEmailAddress"
+    android:textColorHint="@color/blue" >
+
+</EditText>
+
+<Spinner
+    android:id="@+id/SpinnerFeedback"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp" >
+
+</Spinner>
+
+<EditText
+    android:id="@+id/EditTextFeedbackBody"
+    android:layout_width="match_parent"
+    android:layout_height="77dp"
+    android:hint="@string/feedbackbody"
+    android:inputType="textMultiLine"
+    android:lines="5"
+    android:textColorHint="@color/blue" >
+
+</EditText>
+<CheckBox
+    android:id="@+id/CheckBoxResponse"
+    android:layout_height="wrap_content"
+    android:text="@string/feedbackresponse"
+    android:layout_width="match_parent">
+</CheckBox>
+<Button
+    android:id="@+id/ButtonSendFeedback"
+    android:layout_height="wrap_content"
+    android:text="@string/feedbackbutton"
+    android:onClick="sendFeedback"
+    android:layout_width="match_parent">
+</Button>
+
+</LinearLayout>
+</ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_on_feedback">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

@@ -22,7 +22,7 @@ import activity.FourPointGradeActivity;
 import activity.Settings;
 import activity.SevenPointGradeActivity;
 
-import com.domainname.timetablemanager.R;
+import com.ahmedmolawale.timetablemanager.R;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;

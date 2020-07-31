@@ -15,7 +15,7 @@ import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
 
-import com.domainname.timetablemanager.R;
+import com.ahmedmolawale.timetablemanager.R;
 
 import activity.CourseDetails;
 import activity.MainActivity;
@@ -95,7 +95,7 @@ public class NotificationService extends IntentService {
                 }
                 NotificationCompat.Builder builder =
                         new NotificationCompat.Builder(getApplicationContext())
-                                .setSmallIcon(com.domainname.timetablemanager.R.drawable.ic_launcher)
+                                .setSmallIcon(com.ahmedmolawale.timetablemanager.R.drawable.ic_launcher)
                                 .setContentTitle("Reminder!")
                                 .setContentText(message);
 
@@ -153,7 +153,7 @@ public class NotificationService extends IntentService {
 
                 NotificationCompat.Builder builder =
                         new NotificationCompat.Builder(getApplicationContext())
-                                .setSmallIcon(com.domainname.timetablemanager.R.drawable.ic_launcher)
+                                .setSmallIcon(com.ahmedmolawale.timetablemanager.R.drawable.ic_launcher)
                                 .setContentTitle("Reminder!")
                                 .setContentText(message);
                 builder.setAutoCancel(true);

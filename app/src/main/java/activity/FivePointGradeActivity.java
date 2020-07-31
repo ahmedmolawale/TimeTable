@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-import com.domainname.timetablemanager.R;
+import com.ahmedmolawale.timetablemanager.R;
 
 
 public class FivePointGradeActivity extends ActionBarActivity {

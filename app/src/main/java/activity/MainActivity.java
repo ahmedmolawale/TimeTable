@@ -10,7 +10,7 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 
-import com.domainname.timetablemanager.R;
+import com.ahmedmolawale.timetablemanager.R;
 
 import fragment.FragmentPageAdapter;
 

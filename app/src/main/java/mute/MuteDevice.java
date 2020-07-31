@@ -10,7 +10,7 @@ import android.content.SharedPreferences;
 import android.os.Build;
 import android.preference.PreferenceManager;
 
-import com.domainname.timetablemanager.R;
+import com.ahmedmolawale.timetablemanager.R;
 
 
 public class MuteDevice {

@@ -14,7 +14,7 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 
 
-import com.domainname.timetablemanager.R;
+import com.ahmedmolawale.timetablemanager.R;
 
 import data.DataHandler;
 

@@ -12,7 +12,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import com.domainname.timetablemanager.R;
+import com.ahmedmolawale.timetablemanager.R;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdView;
 

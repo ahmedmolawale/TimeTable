@@ -28,7 +28,7 @@ import activity.MainActivity;
 import activity.Settings;
 
 import com.commonsware.cwac.merge.MergeAdapter;
-import com.domainname.timetablemanager.R;
+import com.ahmedmolawale.timetablemanager.R;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;

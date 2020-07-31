@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.domainname.timetablemanager"
+    package="com.ahmedmolawale.timetablemanager"
     android:versionCode="1"
     android:versionName="1.0">
 
-    <uses-sdk
-        android:minSdkVersion="9"
-        android:targetSdkVersion="23" />
     <!-- Permission to start Alarm and Mute on device reboot -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
@@ -34,7 +31,8 @@
 
         <activity
             android:name="activity.MainActivity"
-            android:icon="@drawable/ic_launcher">
+            android:icon="@drawable/ic_launcher"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,7 +41,8 @@
         </activity>
         <activity
             android:name="activity.CourseDetails"
-            android:parentActivityName="activity.MainActivity">
+            android:parentActivityName="activity.MainActivity"
+            android:exported="false">
             <intent-filter>
                 <action android:name=".CourseDetails" />
 
@@ -56,6 +55,7 @@
         </activity>
         <activity
             android:name="activity.CourseEdit"
+            android:exported="false"
             >
             <intent-filter>
                 <action android:name="CourseEdit" />
@@ -65,7 +65,8 @@
         </activity>
         <activity
             android:name="activity.FourPointGradeActivity"
-            android:parentActivityName="activity.MainActivity">
+            android:parentActivityName="activity.MainActivity"
+            android:exported="false">
             <intent-filter>
                 <action android:name=".FourPointGradeActivity" />
 
@@ -78,7 +79,8 @@
         </activity>
         <activity
             android:name="activity.FivePointGradeActivity"
-            android:parentActivityName="activity.MainActivity">
+            android:parentActivityName="activity.MainActivity"
+            android:exported="false">
             <intent-filter>
                 <action android:name=".FivePointGradeActivity" />
 
@@ -91,7 +93,8 @@
         </activity>
         <activity
             android:name="activity.SevenPointGradeActivity"
-            android:parentActivityName="activity.MainActivity">
+            android:parentActivityName="activity.MainActivity"
+            android:exported="false">
             <intent-filter>
                 <action android:name=".SevenPointGradeActivity" />
 
@@ -104,7 +107,8 @@
         </activity>
         <activity
             android:name="activity.FeedbackActivity"
-            android:parentActivityName="activity.MainActivity">
+            android:parentActivityName="activity.MainActivity"
+            android:exported="false">
             <intent-filter>
                 <action android:name=".FeedbackActivity" />
 
@@ -117,7 +121,8 @@
         </activity>
         <activity
             android:name="activity.AboutActivity"
-            android:parentActivityName="activity.MainActivity">
+            android:parentActivityName="activity.MainActivity"
+            android:exported="false">
             <intent-filter>
                 <action android:name=".AboutActivity" />
 
@@ -130,7 +135,8 @@
         </activity>
         <activity
             android:name="activity.HelpActivity"
-            android:parentActivityName="activity.MainActivity">
+            android:parentActivityName="activity.MainActivity"
+            android:exported="false">
             <intent-filter>
                 <action android:name=".HelpActivity" />
 
@@ -141,7 +147,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="activity.MainActivity" />
         </activity>
-        <activity android:name="activity.Settings">
+        <activity android:name="activity.Settings"
+            android:exported="false">
             <intent-filter>
                 <action android:name=".SettingsActivity" />
 
@@ -179,7 +186,8 @@
             android:enabled="true" />
         <receiver
             android:name="alarm.DeviceBootAlarmReceiver"
-            android:enabled="true">
+            android:enabled="true"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -192,7 +200,8 @@
             android:enabled="true" />
         <receiver
             android:name="mute.DeviceBootMuteReceiver"
-            android:enabled="true">
+            android:enabled="true"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>

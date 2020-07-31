@@ -7,7 +7,7 @@ import android.database.Cursor;
 import android.preference.PreferenceManager;
 
 
-import com.domainname.timetablemanager.R;
+import com.ahmedmolawale.timetablemanager.R;
 
 import data.DataHandler;
 import data.ModelConstants;

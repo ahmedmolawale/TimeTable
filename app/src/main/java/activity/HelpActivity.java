@@ -1,11 +1,10 @@
 package activity;
 
-import android.app.Activity;
 import android.os.Bundle;
 
 import android.support.v7.app.AppCompatActivity;
 
-import com.domainname.timetablemanager.R;
+import com.ahmedmolawale.timetablemanager.R;
 
 
 public class HelpActivity extends AppCompatActivity {

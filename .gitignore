@@ -117,6 +117,5 @@ build
 *.swp
 /timetable.jks
 /import-summary.txt
-/build
 /.idea
 /app/build

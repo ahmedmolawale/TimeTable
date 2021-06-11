@@ -118,4 +118,6 @@ build
 /timetable.jks
 /import-summary.txt
 /.idea
-/app/build
+/app/build/
+/private_key.pepk
+/time.jks

@@ -11,8 +11,8 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -35,7 +35,6 @@ import activity.FeedbackActivity;
 import activity.HelpActivity;
 import activity.Settings;
 
-import com.commonsware.cwac.merge.MergeAdapter;
 import com.ahmedmolawale.timetablemanager.R;
 import com.google.android.gms.ads.AdRequest.Builder;
 import com.google.android.gms.ads.AdView;

@@ -7,7 +7,7 @@ import android.app.AlertDialog.Builder;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.support.v4.app.ListFragment;
+import androidx.fragment.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -29,7 +29,6 @@ import activity.Settings;
 
 import com.commonsware.cwac.merge.MergeAdapter;
 import com.ahmedmolawale.timetablemanager.R;
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;

@@ -3,12 +3,13 @@ package activity;
 
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+
+import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager.widget.ViewPager.OnPageChangeListener;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.ActionBarActivity;
 
 import com.ahmedmolawale.timetablemanager.R;
 
@@ -84,15 +85,15 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
 
     }
 	@Override
-	public void onTabReselected(android.support.v7.app.ActionBar.Tab arg0,
-			android.support.v4.app.FragmentTransaction arg1) {
+	public void onTabReselected(androidx.appcompat.app.ActionBar.Tab arg0,
+                                FragmentTransaction arg1) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void onTabSelected(android.support.v7.app.ActionBar.Tab tab,
-			android.support.v4.app.FragmentTransaction arg1) {
+	public void onTabSelected(androidx.appcompat.app.ActionBar.Tab tab,
+                              FragmentTransaction arg1) {
 		// TODO Auto-generated method stub
 		viewPager.getCurrentItem();
 		viewPager.setCurrentItem(tab.getPosition());
@@ -103,8 +104,8 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
 
 
 	@Override
-	public void onTabUnselected(android.support.v7.app.ActionBar.Tab arg0,
-			android.support.v4.app.FragmentTransaction arg1) {
+	public void onTabUnselected(androidx.appcompat.app.ActionBar.Tab arg0,
+                                FragmentTransaction arg1) {
 		// TODO Auto-generated method stub
 		
 	}

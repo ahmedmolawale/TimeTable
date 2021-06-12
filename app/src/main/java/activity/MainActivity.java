@@ -5,11 +5,11 @@ package activity;
 import android.app.Activity;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener;
 import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.ActionBarActivity;
 
 import com.ahmedmolawale.timetablemanager.R;
 
@@ -18,7 +18,7 @@ import fragment.FragmentPageAdapter;
 
 
 @SuppressWarnings("deprecation")
-public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
+public class MainActivity extends AppCompatActivity implements ActionBar.TabListener {
 	
 	public static Activity fa;
 	ActionBar actionBar;

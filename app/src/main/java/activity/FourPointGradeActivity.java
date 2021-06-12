@@ -4,7 +4,8 @@ import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import androidx.appcompat.app.ActionBarActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,7 +19,7 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 
 
-public class FourPointGradeActivity extends ActionBarActivity {
+public class FourPointGradeActivity extends AppCompatActivity {
 
 	private Spinner spinnerForUnits, spinnerForGrades;
 	private String[] spinnerForUnitsData, spinnerForGradesData;

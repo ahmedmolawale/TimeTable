@@ -4,7 +4,8 @@ import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import androidx.appcompat.app.ActionBarActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,7 +17,7 @@ import android.widget.Spinner;
 import com.ahmedmolawale.timetablemanager.R;
 
 
-public class FivePointGradeActivity extends ActionBarActivity {
+public class FivePointGradeActivity extends AppCompatActivity {
 
 	private Spinner spinnerForUnits, spinnerForGrades;
 	private String[] spinnerForUnitsData, spinnerForGradesData;

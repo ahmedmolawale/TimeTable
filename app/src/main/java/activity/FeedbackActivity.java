@@ -2,7 +2,8 @@ package activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.ActionBarActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
@@ -15,7 +16,7 @@ import com.ahmedmolawale.timetablemanager.R;
 import com.google.android.gms.ads.AdView;
 
 
-public class FeedbackActivity extends ActionBarActivity {
+public class FeedbackActivity extends AppCompatActivity {
 
 	private EditText username, email, message;
 	private Spinner feedBackTypeSpinner;

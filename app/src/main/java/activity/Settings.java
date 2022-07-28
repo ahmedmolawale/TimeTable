@@ -29,6 +29,7 @@ import data.ModelConstants;
 
 import mute.MuteDevice;
 
+@SuppressWarnings("ALL")
 public class Settings extends PreferenceActivity {
     private Preference cancelAlarmPreference;
     private CheckBoxPreference checkBoxPreferenceForAutoVibrate;

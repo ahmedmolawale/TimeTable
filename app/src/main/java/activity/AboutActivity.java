@@ -1,5 +1,6 @@
 package activity;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -17,9 +18,8 @@ import com.google.android.gms.ads.AdView;
 public class AboutActivity extends AppCompatActivity {
 
 	ImageButton facebook, youtube, twitter;
+    @SuppressLint("StaticFieldLeak")
     public static Activity about;
-
-
 
     @Override
     protected void onDestroy() {

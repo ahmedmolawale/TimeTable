@@ -18,8 +18,7 @@ import com.ahmedmolawale.timetablemanager.R;
 
 
 public class SevenPointGradeActivity extends AppCompatActivity {
-	
-	
+
 	private Spinner spinnerForUnits, spinnerForGrades;
 	private String[] spinnerForUnitsData, spinnerForGradesData;
 	private  ViewGroup viewGroup;

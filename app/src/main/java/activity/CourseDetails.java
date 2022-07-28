@@ -2,6 +2,8 @@ package activity;
 
 import mute.MuteDevice;
 import alarm.Alarm;
+
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -28,6 +30,7 @@ import data.ModelConstants;
 
 public class CourseDetails extends AppCompatActivity {
 
+	@SuppressLint("StaticFieldLeak")
 	public static Activity activity;
 	String rowId;
 	TextView courseCode, courseTitle, time, lecturer, venue, alarmTime;

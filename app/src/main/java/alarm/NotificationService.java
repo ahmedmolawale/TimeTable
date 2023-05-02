@@ -133,7 +133,7 @@ public class NotificationService extends IntentService {
                 intentModify.putExtra("STARTTIMEZ", startTimeInMins);
                 intentModify.putExtra("ENDTIMEZ", endTimeInMins);
 
-                PendingIntent pendingIntentModify = PendingIntent.getService(getApplicationContext(), Integer.parseInt(id), intentModify, PendingIntent.FLAG_UPDATE_CURRENT);
+                PendingIntent pendingIntentModify = PendingIntent.getService(getApplicationContext(), Integer.parseInt(id), intentModify, PendingIntent.FLAG_IMMUTABLE);
 
                 builder.setStyle(new NotificationCompat.BigTextStyle().bigText(message));
 

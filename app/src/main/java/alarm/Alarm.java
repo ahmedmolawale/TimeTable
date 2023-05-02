@@ -48,22 +48,24 @@ public class Alarm {
 
         Intent intent = new Intent(context, AlarmReceiver.class);
         intent.putExtra("ROW_ID", Integer.toString(id));
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, id, intent, PendingIntent.FLAG_CANCEL_CURRENT);
+        int intentFlag;
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
+            intentFlag = PendingIntent.FLAG_CANCEL_CURRENT;
+        } else {
+            intentFlag = PendingIntent.FLAG_IMMUTABLE;
+        }
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, id, intent, intentFlag);
 
         if (currentTime > alarmTime) {
             alarmTime += AlarmManager.INTERVAL_DAY * 7;
         }
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
-            alarmManager.set(AlarmManager.RTC_WAKEUP, alarmTime, pendingIntent);
-        } else {
-            alarmManager.setExact(AlarmManager.RTC_WAKEUP, alarmTime, pendingIntent);
-        }
+        alarmManager.set(AlarmManager.RTC_WAKEUP, alarmTime, pendingIntent);
     }
 
     public void cancelAlarm(Context context, String rowId) {
 
         Intent intent = new Intent(context, AlarmReceiver.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, Integer.parseInt(rowId), intent, 0);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, Integer.parseInt(rowId), intent, PendingIntent.FLAG_IMMUTABLE);
 
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
 

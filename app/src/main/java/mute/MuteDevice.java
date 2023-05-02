@@ -63,14 +63,15 @@ public class MuteDevice {
         intent.putExtra("STARTTIMEINMINS", Integer.toString(startTimeInMins));
         intent.putExtra("ENDTIMEINMINS", Integer.toString(endTimeInMins));
         intent.putExtra("TYPE", type);  //used to know if to mute or vibrate
-
-
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this.context, id, intent, PendingIntent.FLAG_CANCEL_CURRENT);
-        if (Build.VERSION.SDK_INT >= 19) {
-            alarmManager.setExact(AlarmManager.RTC_WAKEUP, muteTime, pendingIntent);
+        int intentFlag;
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
+            intentFlag = PendingIntent.FLAG_CANCEL_CURRENT;
         } else {
-            alarmManager.set(AlarmManager.RTC_WAKEUP, muteTime, pendingIntent);
+            intentFlag = PendingIntent.FLAG_IMMUTABLE;
         }
+
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this.context, id, intent, intentFlag);
+        alarmManager.set(AlarmManager.RTC_WAKEUP, muteTime, pendingIntent);
     }
 
     public void setSubsequentMuteOrVibrate(int id, String day, int startTimeInMins, int endTimeInMins, String type) {
@@ -121,12 +122,14 @@ public class MuteDevice {
             intent.putExtra("STARTTIMEINMINS", Integer.toString(startTimeInMins));
             intent.putExtra("ENDTIMEINMINS", Integer.toString(endTimeInMins));
             intent.putExtra("TYPE", type);
-            PendingIntent pendingIntent = PendingIntent.getBroadcast(this.context, id, intent, PendingIntent.FLAG_CANCEL_CURRENT);
-            if (Build.VERSION.SDK_INT >= 19) {
-                alarmManager.setExact(AlarmManager.RTC_WAKEUP, muteTime, pendingIntent);
+            int intentFlag;
+            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
+                intentFlag = PendingIntent.FLAG_CANCEL_CURRENT;
             } else {
-                alarmManager.set(AlarmManager.RTC_WAKEUP, muteTime, pendingIntent);
+                intentFlag = PendingIntent.FLAG_IMMUTABLE;
             }
+            PendingIntent pendingIntent = PendingIntent.getBroadcast(this.context, id, intent, intentFlag);
+            alarmManager.set(AlarmManager.RTC_WAKEUP, muteTime, pendingIntent);
         }
     }
 
@@ -134,7 +137,7 @@ public class MuteDevice {
 
         Intent intent = new Intent(context, MuteDeviceReceiver.class);
 
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, Integer.parseInt(rowId), intent, 0);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, Integer.parseInt(rowId), intent, PendingIntent.FLAG_IMMUTABLE);
 
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
 

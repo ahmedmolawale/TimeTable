@@ -85,17 +85,19 @@ public class MuteDeviceReceiver extends BroadcastReceiver {
         long unmuteTime = calendarAlarm.getTimeInMillis();
         Intent intentForUnmute = new Intent(context, UnmuteDeviceReceiver.class);
 
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, Integer.parseInt(id), intentForUnmute, PendingIntent.FLAG_CANCEL_CURRENT);
+        int intentFlag;
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
+            intentFlag = PendingIntent.FLAG_CANCEL_CURRENT;
+        } else {
+            intentFlag = PendingIntent.FLAG_IMMUTABLE;
+        }
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, Integer.parseInt(id), intentForUnmute, intentFlag);
 
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         if (currentTime > unmuteTime) {
             unmuteTime = unmuteTime + AlarmManager.INTERVAL_DAY * 7;
         }
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
-            alarmManager.set(AlarmManager.RTC_WAKEUP, unmuteTime, pendingIntent);
-        } else {
-            alarmManager.setExact(AlarmManager.RTC_WAKEUP, unmuteTime, pendingIntent);
-        }
+        alarmManager.set(AlarmManager.RTC_WAKEUP, unmuteTime, pendingIntent);
     }
 }
 

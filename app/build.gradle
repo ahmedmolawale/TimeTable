@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
     compileSdkVersion 33
@@ -32,4 +33,5 @@ dependencies {
     implementation files('libs/cwac-merge-1.1.1.jar')
     implementation files('libs/cwac-sacklist-1.0.2.jar')
     implementation 'com.google.android.gms:play-services:6.+'
+    implementation 'androidx.core:core-ktx:1.10.0'
 }
